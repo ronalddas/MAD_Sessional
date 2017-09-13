@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class Q4 extends AppCompatActivity {
 
+    String[] states = {"UP","AP","Karnataka","Delhi","Chennai","Bihar"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class Q4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String txt = q4et1.getText().toString()+" "+q4et2.getText().toString()+" "+q4et3.getText().toString()+" "+q4et4.getText().toString()+" "+spinner.getSelectedItem().toString();
-                Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Q4.this, txt, Toast.LENGTH_SHORT).show();
             }
         });
     }
